@@ -41,6 +41,39 @@ $(function() {
 		})
 	;
 	
+	// Keys
+	$('#video')
+		.live('mouseover', function() {
+			videoOver = true;
+		})
+		.live('mouseout', function() {
+			videoOver = false;
+		})
+	;
+	
+	$(window)
+		.keydown( function(e) {
+			if( videoOver ) {
+				switch( e.keyCode ) {
+					case 38: doCommand(0); break;
+					case 40: doCommand(2); break;
+					case 37: doCommand(4); break;
+					case 39: doCommand(6); break;
+				}
+			}
+		})
+		.keyup( function(e) {
+			if( videoOver ) {
+				switch( e.keyCode ) {
+					case 38: doCommand(1); break;
+					case 40: doCommand(3); break;
+					case 37: doCommand(5); break;
+					case 39: doCommand(7); break;
+				}
+			}
+		})
+	;
+	
 	// Send command to camera
 	function doCommand( cmd )
 	{
