@@ -1,0 +1,34 @@
+* {
+	font: 8pt arial;
+}
+
+#wrap {
+	position: relative;
+	z-index: 10;
+}
+
+	#main {
+		position: relative;
+		z-index: 20;
+		background-color: #fff;
+	}
+	
+		#videoDiv {
+			position: relative;
+			z-index: 30;
+		}
+		
+		#overlay {
+			position: absolute;
+			z-index: 40;
+		}
+	
+	#settings {
+		position: relative;
+		z-index: 20;
+	}
+
+#hiddenIframe {
+	display: none;
+	z-index: 1;
+}
