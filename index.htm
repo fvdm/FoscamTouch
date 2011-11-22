@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FoscamTouch</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="screen.css">
+		<link rel="stylesheet" type="text/css" media="pda" href="mobile.css">
+		<script type="text/javascript" src="https://hawx.org/jquery.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
+				<div id="videoDiv">
+					<img id="video">
+				</div>
+			</div>
+			<div id="settings">
+				<input type="button" id="load" value="load feed"><br>
+				<input id="host" placeholder="host">
+				<input id="port" placeholder="port"><br>
+				<input id="user" placeholder="user">
+				<input id="pass" placeholder="pass">
+				<br><br>
+				<input type="button" id="up" value="up">
+				<input type="button" id="down" value="down">
+				<input type="button" id="left" value="left">
+				<input type="button" id="right" value="right">
+			</div>
+		</div>
+		<iframe id="hiddenIframe"></iframe>
+	</body>
+</html>
